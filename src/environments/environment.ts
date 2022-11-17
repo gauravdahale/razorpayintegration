@@ -3,9 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  cloudFunctions : {
+    createOrder: 'https://us-central1-vyapar-pragati2.cloudfunctions.net/createOrder',
+    capturePayment: 'https://us-central1-vyapar-pragati2.cloudfunctions.net/capturePayments'
+  },
+  RAZORPAY_KEY_ID: 'rzp_test_0mRruMyC9RZaCZ'
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
